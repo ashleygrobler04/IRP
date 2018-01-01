@@ -1,0 +1,5 @@
+[general]
+volume = float(default=1)
+device = string(default="Default")
+last = string(default="")
+resumelast = boolean(default=True)
