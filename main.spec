@@ -4,9 +4,8 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['C:\\Users\\mason\\projects\\python\\git\\AccessiPlayer'],
              binaries=None,
-             datas=None,
+             datas=[('app.defaults','')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -19,7 +18,7 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='main',
+          name='IRP',
           debug=False,
           strip=False,
           upx=True,
@@ -30,4 +29,4 @@ coll = COLLECT(exe,
                a.datas,
                strip=False,
                upx=True,
-               name='main')
+               name='IRP')
